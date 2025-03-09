@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rive Animation</title>
+    <title>Rive Debug</title>
 </head>
 <body>
+
+    <h2>Image Test</h2>
+    <img src="monet.jpg" alt="Test Image" width="300"> <!-- Ensure monet.jpg exists -->
+
+    <h2>Rive Animation Test</h2>
     <canvas id="riveCanvas" width="500" height="500"></canvas>
 
     <script type="module">
         import { Rive } from "https://cdn.jsdelivr.net/npm/@rive-app/canvas@latest/+esm";
 
         new Rive({
-            src: "monet.riv", // ✅ Correct file path
+            src: "monet.riv", // Adjusted path
             canvas: document.getElementById("riveCanvas"),
             autoplay: true,
-        }); 
+        });
     </script>
+
 </body>
 </html>
